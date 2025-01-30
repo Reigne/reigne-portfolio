@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div
       className="bg-cover bg-bottom bg-background text-white font-poppins flex justify-center items-center"
-      style={{ backgroundImage: "url('/images/background-1.png')" }}
+      style={{ backgroundImage: "url('/images/background-5.png')" }}
     >
       <div className="w-full max-w-[120rem] h-[924px] px-[12rem] font-poppins overflow-hidden flex flex-row justify-center items-center">
         <div className="relative flex justify-center items-center p-4 md:p-0 w-full ">
@@ -15,14 +15,14 @@ const Hero = () => {
             <img
               src="/images/rectangle.png"
               alt="rectangle"
-              width="88%"
+              width="92%"
               className="absolute bottom-0 left-0 "
             />
 
             <MouseParallax
               enableOnTouchDevice
               isAbsolutelyPositioned
-              strength={0.01}
+              strength={0.04}
             >
               <img
                 src="/images/photoshop-toolbar.png"
@@ -35,14 +35,14 @@ const Hero = () => {
             <img
               src="/images/reigne.png"
               alt="reigne"
-              width="70%"
-              className="relative z-0 ml-20"
+              width="80%"
+              className="relative z-0 ml-14"
             />
 
             <MouseParallax
               enableOnTouchDevice
               isAbsolutelyPositioned
-              strength={0.01}
+              strength={0.04}
             >
               <img
                 src="/images/codeblock.png"
@@ -55,12 +55,12 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col justify-center  items-start p-4 md:p-0 w-[110rem] ">
-          <p className="text-[80px] leading-[110px]">
-            Hi, there <br />
-            <span className="text-[128px] font-bold">I am Reigne</span>
+          <p className="text-[50px] leading-[90px]">
+            Hello, there <br />
+            <span className="text-[100px] font-bold">I am <span className="text-primary">Reigne</span></span>
           </p>
 
-          <span className="text-xl pt-6">
+          <span className="text-lg pt-6">
             A passionate web developer and designer based in the Philippines. I
             love to create beautiful and functional websites that help
             businesses grow. I am always eager to learn new technologies and
