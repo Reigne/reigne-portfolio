@@ -26,7 +26,7 @@ const Hero = () => {
       />
 
       <img
-        className="absolute z-20 bottom-8 left-[220px] mix-blend-hard-light"
+        className="absolute z-20 bottom-8 left-[230px] mix-blend-hard-light"
         src="/images/photoshop-toolbar.png"
         alt="Container"
         draggable="false"
