@@ -6,11 +6,11 @@ import { MouseParallax } from "react-just-parallax";
 const Hero = () => {
   return (
     <div
-      className="bg-cover bg-bottom bg-background text-white font-poppins flex justify-center items-center"
-      style={{ backgroundImage: "url('/images/background-5.png')" }}
+      className="bg-cover bg-bottom bg-background text-white font-poppins flex justify-center items-center overflow-hidden"
+      style={{ backgroundImage: "url('/images/background-6.png')" }}
     >
-      <div className="w-full max-w-[120rem] h-[924px] px-[12rem] font-poppins overflow-hidden flex flex-row justify-center items-center">
-        <div className="relative flex justify-center items-center p-4 md:p-0 w-full ">
+      <div className="w-full max-w-[120rem] h-[924px] px-[12rem] font-poppins overflow-hidden flex flex-row justify-center items-center gap-8">
+        <div className="relative flex justify-center items-center p-4 md:p-0 w-full">
           <div className="w-full">
             <img
               src="/images/rectangle.png"
@@ -35,8 +35,8 @@ const Hero = () => {
             <img
               src="/images/reigne.png"
               alt="reigne"
-              width="80%"
-              className="relative z-0 ml-14"
+              width="75%"
+              className="relative z-0 ml-20"
             />
 
             <MouseParallax

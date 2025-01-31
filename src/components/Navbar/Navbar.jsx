@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="w-full flex justify-center absolute top-0 left-0 bg-transparent text-white font-poppins">
+    <div className="w-full flex justify-center absolute top-0 left-0 bg-transparent text-white font-poppins overflow-hidden">
       <div className="w-full max-w-[120rem] px-[12rem] py-6 flex justify-between items-center gap-4">
         <h1 className="text-2xl font-bold flex items-center gap-3">
           <span>
