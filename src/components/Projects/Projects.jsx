@@ -84,7 +84,33 @@ const Projects = () => {
 
             <div className="group relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[640px] bg-white rounded-lg overflow-hidden border border-background/10 cursor-pointer transition-all">
               <img
+                src="/images/projects/project-9.png"
+                alt="project"
+                className="w-full h-full rounded-t-lg object-cover  lg:object-cover object-top"
+              />
+              <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span className="text-white text-xl font-bold tracking-wide">
+                  View Project
+                </span>
+              </div>
+            </div>
+
+            <div className="group relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[640px] bg-white rounded-lg overflow-hidden border border-background/10 cursor-pointer transition-all">
+              <img
                 src="/images/projects/project-4.jpeg"
+                alt="project"
+                className="w-full h-full rounded-t-lg object-cover  lg:object-cover object-top"
+              />
+              <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span className="text-white text-xl font-bold tracking-wide">
+                  View Project
+                </span>
+              </div>
+            </div>
+
+            <div className="group relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[640px] bg-white rounded-lg overflow-hidden border border-background/10 cursor-pointer transition-all">
+              <img
+                src="/images/projects/project-8.png"
                 alt="project"
                 className="w-full h-full rounded-t-lg object-cover  lg:object-cover object-top"
               />
