@@ -1,0 +1,25 @@
+.marquee {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.marquee-content {
+  display: flex;
+  animation: marquee 20s linear infinite;
+  width: 200%; /* Ensure the content is wide enough to scroll smoothly */
+}
+
+.client-logo {
+  mix-blend-mode: luminosity;
+  margin-right: 20px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
