@@ -1,7 +1,6 @@
 import React from "react";
 import { CLIENTS_LOGO, SKILLS } from "../../constants";
 import "./Showcase.css"; // Import the CSS file for animations
-import { motion } from "framer-motion";
 
 const Showcase = () => {
   return (
@@ -12,7 +11,7 @@ const Showcase = () => {
         </div>
 
         <div className="marquee">
-          {/* <div className="marquee-content">
+          <div className="marquee-content">
             {SKILLS.concat(SKILLS).map((client, index) => (
               <img
                 key={index}
@@ -23,45 +22,6 @@ const Showcase = () => {
                 //   onDragStart={preventImageDrag}
               />
             ))}
-          </div>
-        </div> */}
-
-          <div className="flex">
-            <motion.div
-              initial={{ x: 0 }}
-              animate={{ x: "-100%" }}
-              transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
-              className="flex flex-shrink-0"
-            >
-              {SKILLS.concat(SKILLS).map((client, index) => (
-                <img
-                  key={index}
-                  className="inline-block mr-28 mix-blend-luminosity opacity-60"
-                  src={client.imageUrl}
-                  alt={client.name}
-                  width={60}
-                  //   onDragStart={preventImageDrag}
-                />
-              ))}
-            </motion.div>
-
-            <motion.div
-              initial={{ x: 0 }}
-              animate={{ x: "-100%" }}
-              transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
-              className="flex flex-shrink-0"
-            >
-              {SKILLS.concat(SKILLS).map((client, index) => (
-                <img
-                  key={index}
-                  className="inline-block mr-28 mix-blend-luminosity opacity-60"
-                  src={client.imageUrl}
-                  alt={client.name}
-                  width={60}
-                  //   onDragStart={preventImageDrag}
-                />
-              ))}
-            </motion.div>
           </div>
         </div>
       </div>
