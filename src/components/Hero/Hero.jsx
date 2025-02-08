@@ -12,7 +12,7 @@ const Hero = () => {
       <img
         src="/images/gradient.png"
         alt="Gradient"
-        className="absolute z-40 -bottom-14 w-full h-auto"
+        className="absolute z-40 bottom-0 w-full h-auto"
         draggable="false"
         onClick={(e) => e.preventDefault()}
       />
