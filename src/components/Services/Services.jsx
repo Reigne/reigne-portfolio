@@ -25,7 +25,7 @@ const Services = () => {
             <div
               className="bg-background text-white p-8 rounded-3xl transition w-[480px] h-[588px]"
               style={{
-                backgroundImage: "url('/images/services-container-3.png')",
+                backgroundImage: "url('/images/services-container.png')",
               }}
             >
               <div className="space-y-4">
@@ -59,7 +59,7 @@ const Services = () => {
             <div
               className="bg-background text-white p-8 rounded-3xl transition w-[530px] h-[638px] bg-cover"
               style={{
-                backgroundImage: "url('/images/services-container-3.png')",
+                backgroundImage: "url('/images/services-container.png')",
               }}
             >
               <div className="space-y-4">
@@ -84,11 +84,11 @@ const Services = () => {
             <div
               className="bg-zinc-200 p-8 rounded-3xl transition w-[480px] h-[588px] text-white"
               style={{
-                backgroundImage: "url('/images/services-container-3.png')",
+                backgroundImage: "url('/images/services-container.png')",
               }}
             >
               <div className="space-y-4">
-              <div className="rounded-3xl border border-zinc-600 p-6 w-fit">
+                <div className="rounded-3xl border border-zinc-600 p-6 w-fit">
                   <FaCode className="text-4xl text-primary" />
                 </div>
                 <h3 className="text-2xl font-bold pt-4">Video Editing</h3>
