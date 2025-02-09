@@ -10,10 +10,13 @@ const Projects = () => {
             <p className="text-base md:text-xl font-semibold">My Projects</p>
 
             <p className="text-2xl md:text-3xl lg:text-5xl font-bold">
-              The <span className="text-primary">Services</span> We Offer
+              Bringing <span className="text-primary">Ideas</span> to Life
             </p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p className="text-zinc-600">
+              Take a look at some of the work I've done. Each project showcases
+              my skills in web development, graphic design, and more.
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 mt-24">
