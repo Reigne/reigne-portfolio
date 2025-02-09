@@ -5,8 +5,8 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="w-full flex justify-center absolute top-0 left-0 bg-transparent text-white font-poppins overflow-hidden z-50">
-      <div className="w-full max-w-screen-2xl px-4 md:px-8 py-6 flex justify-between items-center gap-4">
+    <div className="w-full flex justify-center absolute top-0 left-0 bg-transparent text-white font-poppins overflow-hidden z-50 ">
+      <div className="w-full max-w-screen-2xl py-6 flex justify-between items-center gap-4 px-4 md:px-8">
         <Link to="/">
           <h1 className="text-2xl font-bold flex items-center gap-3">
             <span>
@@ -101,16 +101,19 @@ const Navbar = () => {
 
             {/* Menu Items */}
             <ul className="text-white text-2xl flex flex-col items-center gap-8">
-              <li className="hover:text-primary transition duration-300 cursor-pointer">
+              <Link
+                to="/"
+                className="relative hover:text-primary transition duration-300 cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+              >
                 about
-              </li>
-              <li className="hover:text-primary transition duration-300 cursor-pointer">
+              </Link>
+              <li className="relative hover:text-primary transition duration-300 cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">
                 skills
               </li>
-              <li className="hover:text-primary transition duration-300 cursor-pointer">
+              <li className="relative hover:text-primary transition duration-300 cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">
                 projects
               </li>
-              <li className="hover:text-primary transition duration-300 cursor-pointer">
+              <li className="relative hover:text-primary transition duration-300 cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">
                 testimonials
               </li>
               <Link to="/contact">

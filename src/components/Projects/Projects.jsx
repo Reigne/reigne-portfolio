@@ -1,9 +1,10 @@
 import React from "react";
+import { PROJECTS } from "../../constants";
 
 const Projects = () => {
   return (
-    <div className="font-poppins flex justify-center items-center px-4">
-      <div className="w-full max-w-screen-2xl min-h-[924px] px-4 md:px-8 overflow-hidden flex justify-center gap-8 py-24">
+    <div className="font-poppins flex justify-center items-center px-2">
+      <div className="w-full max-w-screen-2xl min-h-[924px] overflow-hidden flex justify-center gap-8 py-24 px-0 md:px-8">
         <div className="flex flex-col w-full ">
           <div className="text-center space-y-2 md:space-y-4">
             <p className="text-base md:text-xl font-semibold">My Projects</p>
@@ -15,124 +16,32 @@ const Projects = () => {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
 
-          {/* 4 cols container size width 475 x height 556 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-24">
-            <div className="group relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[640px] bg-white rounded-lg overflow-hidden border border-background/10 cursor-pointer transition-all">
-              <img
-                src="/images/projects/project-1.jpeg"
-                alt="project"
-                className="w-full h-full rounded-t-lg object-cover lg:object-cover object-top"
-              />
-              <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="text-white text-xl font-bold tracking-wide">
-                  View Project
-                </span>
-              </div>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 mt-24">
+            {PROJECTS.slice()
+              .reverse()
+              .map((project) => (
+                <div
+                  key={project.id}
+                  className="group relative w-full h-[640px] bg-white rounded-lg overflow-hidden border border-background/30 cursor-pointer transition-all "
+                >
+                  <img
+                    src={project.imageUrl}
+                    alt={project.name}
+                    className="w-full h-full group-hover:scale-105 transition rounded-t-lg object-cover lg:object-cover object-top"
+                  />
 
-            <div className="group relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[640px] bg-white rounded-lg overflow-hidden border border-background/10 cursor-pointer transition-all">
-              <img
-                src="/images/projects/project-2.jpeg"
-                alt="project"
-                className="w-full h-full rounded-t-lg object-cover  lg:object-cover object-top"
-              />
-              <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="text-white text-xl font-bold tracking-wide">
-                  View Project
-                </span>
-              </div>
-            </div>
-
-            <div className="group relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[640px] bg-white rounded-lg overflow-hidden border border-background/10 cursor-pointer transition-all">
-              <img
-                src="/images/projects/project-3.jpeg"
-                alt="project"
-                className="w-full h-full rounded-t-lg object-cover  lg:object-cover object-top"
-              />
-              <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="text-white text-xl font-bold tracking-wide">
-                  View Project
-                </span>
-              </div>
-            </div>
-
-            <div className="group relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[640px] bg-white rounded-lg overflow-hidden border border-background/10 cursor-pointer transition-all">
-              <img
-                src="/images/projects/project-6.png"
-                alt="project"
-                className="w-full h-full rounded-t-lg object-cover  lg:object-cover object-top"
-              />
-              <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="text-white text-xl font-bold tracking-wide">
-                  View Project
-                </span>
-              </div>
-            </div>
-
-            <div className="group relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[640px] bg-white rounded-lg overflow-hidden border border-background/10 cursor-pointer transition-all">
-              <img
-                src="/images/projects/project-7.png"
-                alt="project"
-                className="w-full h-full rounded-t-lg object-cover  lg:object-cover object-top"
-              />
-              <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="text-white text-xl font-bold tracking-wide">
-                  View Project
-                </span>
-              </div>
-            </div>
-
-            <div className="group relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[640px] bg-white rounded-lg overflow-hidden border border-background/10 cursor-pointer transition-all">
-              <img
-                src="/images/projects/project-9.png"
-                alt="project"
-                className="w-full h-full rounded-t-lg object-cover  lg:object-cover object-top"
-              />
-              <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="text-white text-xl font-bold tracking-wide">
-                  View Project
-                </span>
-              </div>
-            </div>
-
-            <div className="group relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[640px] bg-white rounded-lg overflow-hidden border border-background/10 cursor-pointer transition-all">
-              <img
-                src="/images/projects/project-10.png"
-                alt="project"
-                className="w-full h-full rounded-t-lg object-cover  lg:object-cover object-top"
-              />
-              <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="text-white text-xl font-bold tracking-wide">
-                  View Project
-                </span>
-              </div>
-            </div>
-
-            <div className="group relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[640px] bg-white rounded-lg overflow-hidden border border-background/10 cursor-pointer transition-all">
-              <img
-                src="/images/projects/project-8.png"
-                alt="project"
-                className="w-full h-full rounded-t-lg object-cover  lg:object-cover object-top"
-              />
-              <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="text-white text-xl font-bold tracking-wide">
-                  View Project
-                </span>
-              </div>
-            </div>
-
-            <div className="group relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[640px] bg-white rounded-lg overflow-hidden border border-background/10 cursor-pointer transition-all">
-              <img
-                src="/images/projects/project-4.jpeg"
-                alt="project"
-                className="w-full h-full rounded-t-lg object-cover  lg:object-cover object-top"
-              />
-              <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="text-white text-xl font-bold tracking-wide">
-                  View Project
-                </span>
-              </div>
-            </div>
+                  <div className="absolute inset-0 bg-zinc-950 MyGradient2 transition-opacity duration-300 flex items-end justify-center">
+                    <span className="text-white font-bold mb-4">
+                      {project.name}
+                    </span>
+                  </div>
+                  <div className="absolute inset-0 bg-zinc-950 MyGradient opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center">
+                    <span className="text-white font-bold mb-4">
+                      {project.name}
+                    </span>
+                  </div>
+                </div>
+              ))}
           </div>
         </div>
       </div>

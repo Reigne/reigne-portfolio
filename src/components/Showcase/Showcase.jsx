@@ -4,8 +4,8 @@ import "./Showcase.css"; // Import the CSS file for animations
 
 const Showcase = () => {
   return (
-    <div className="w-full flex justify-center bg-transparent font-poppins overflow-hidden z-50 ">
-      <div className="w-full max-w-screen-2xl px-4 md:px-8 py-6 flex justify-between items-center gap-12 border-b border-background/10">
+    <div className="w-full flex justify-center bg-transparent font-poppins overflow-hidden z-50 bg-zinc-50 p-2">
+      <div className="w-full max-w-screen-2xl py-6 flex justify-between items-center gap-12 border-b border-background/10 px-0 md:px-8">
         <div className="min-w-fit">
           <p className="font-semibold tracking-wider text-md">MY SKILLS</p>
         </div>

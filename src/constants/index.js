@@ -17,7 +17,17 @@ import {
   mongodb,
   nodejs,
   react,
-  tailwindcss
+  tailwindcss,
+  capstoneSolutionPortfolio,
+  giaPortfolio,
+  hrPrimoAts,
+  meetworldHeroPage,
+  pcMaster,
+  quickForm,
+  tapinacSystem,
+  teampoorMobile,
+  teampoorWebsite,
+  teampoorWebsite2,
 } from "../assets";
 
 // cleints logo import all 1-8
@@ -116,6 +126,53 @@ export const SKILLS = [
     name: "TailwindCSS",
     imageUrl: tailwindcss,
   },
-]
+];
 
-
+// projects images
+export const PROJECTS = [
+  {
+    id: 1,
+    name: "PC Master",
+    imageUrl: pcMaster,
+  },
+  {
+    id: 2,
+    name: "Quick Form",
+    imageUrl: quickForm,
+  },
+  {
+    id: 3,
+    name: "HR Primo ATS",
+    imageUrl: hrPrimoAts,
+  },
+  {
+    id: 4,
+    name: "Teampoor Mobile",
+    imageUrl: teampoorMobile,
+  },
+  {
+    id: 5,
+    name: "Teampoor Website",
+    imageUrl: teampoorWebsite,
+  },
+  {
+    id: 6,
+    name: "Meetworld Hero Page",
+    imageUrl: meetworldHeroPage,
+  },
+  {
+    id: 7,
+    name: "Capstone Solutions Portfolio",
+    imageUrl: capstoneSolutionPortfolio,
+  },
+  {
+    id: 8,
+    name: "Tapinac System",
+    imageUrl: tapinacSystem,
+  },
+  {
+    id: 9,
+    name: "Gia Portfolio",
+    imageUrl: giaPortfolio,
+  },
+];

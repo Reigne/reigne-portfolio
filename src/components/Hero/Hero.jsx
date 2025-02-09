@@ -5,7 +5,7 @@ import { MouseParallax, ScrollParallax } from "react-just-parallax";
 const Hero = () => {
   return (
     <div
-      className="w-full flex justify-center bg-background text-white font-poppins overflow-hidden relative "
+      className="w-full flex justify-center bg-background text-white font-poppins overflow-hidden relative px-2"
       id="about"
     >
       
@@ -53,7 +53,7 @@ const Hero = () => {
         />
       </ScrollParallax>
 
-      <div className="w-full max-w-screen-2xl min-h-[924px] px-4 md:px-8 overflow-hidden flex justify-center gap-8 py-8 relative z-40">
+      <div className="w-full max-w-screen-2xl min-h-[924px] overflow-hidden flex justify-center gap-8 py-8 relative z-40 px-0 md:px-8">
         <div className="w-full lg:w-1/2"></div>
 
         <div className="flex flex-col justify-center items-start w-full lg:w-1/2 p-4 md:p-0">

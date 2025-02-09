@@ -4,8 +4,8 @@ import { FaCheck } from "react-icons/fa";
 
 const Services = () => {
   return (
-    <div className="font-poppins flex justify-center items-center px-4">
-      <div className="w-full max-w-screen-2xl px-4 md:px-8 overflow-hidden flex justify-center gap-8 py-24">
+    <div className="font-poppins flex justify-center items-center bg-zinc-50 px-2">
+      <div className="w-full max-w-screen-2xl overflow-hidden flex justify-center gap-8 py-24 px-0 md:px-8">
         <div className="flex flex-col w-full ">
           <div className="text-center space-y-2 md:space-y-4 max-w-4xl mx-auto">
             <p className="text-base md:text-xl font-semibold">My Services</p>
@@ -20,10 +20,10 @@ const Services = () => {
               solutions to help you succeed.
             </p>
           </div>
-          <div className="flex justify-center items-center gap-2 mt-8 md:mt-16 w-full">
+          <div className="flex flex-col lg:flex-row justify-center items-center gap-2 mt-8 md:mt-16 w-full">
             {/* Web Development Service */}
             <div
-              className="bg-background text-white p-8 rounded-3xl transition w-[480px] h-[588px]"
+              className="bg-background text-white p-8 rounded-3xl transition w-full lg:w-[490px] h-[588px] bg-cover"
               style={{
                 backgroundImage: "url('/images/services-container.png')",
               }}
@@ -57,7 +57,7 @@ const Services = () => {
 
             {/* Graphic Design Service */}
             <div
-              className="bg-background text-white p-8 rounded-3xl transition w-[530px] h-[638px] bg-cover"
+              className="bg-background text-white p-8 rounded-3xl transition w-full lg:w-[540px] h-[638px] bg-cover"
               style={{
                 backgroundImage: "url('/images/services-container.png')",
               }}
@@ -82,7 +82,7 @@ const Services = () => {
 
             {/* Video Editor */}
             <div
-              className="bg-zinc-200 p-8 rounded-3xl transition w-[480px] h-[588px] text-white"
+              className="bg-background text-white p-8 rounded-3xl transition w-full lg:w-[490px] h-[588px] bg-cover"
               style={{
                 backgroundImage: "url('/images/services-container.png')",
               }}
