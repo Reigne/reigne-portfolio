@@ -37,7 +37,7 @@ const Hero = () => {
       <img
         src="/images/reigne.png"
         alt="Reigne"
-        className="absolute z-20 bottom-0 left-[180px] h-auto"
+        className="absolute z-20 bottom-0 left-[180px] h-auto "
         draggable="false"
         width="732px"
         onClick={(e) => e.preventDefault()}
@@ -75,7 +75,7 @@ const Hero = () => {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row justify-start items-center gap-4 sm:gap-8 mt-4 sm:mt-6 md:mt-8 w-full">
-            <button className="w-full sm:w-auto bg-primary text-black px-6 sm:px-8 md:px-12 py-2 sm:py-3 rounded-full hover:bg-primary-dark hover:scale-105 transform transition duration-300 text-sm sm:text-base shadow-lg shadow-primary/50">
+            <button className="w-full sm:w-auto bg-primary text-black px-6 sm:px-8 md:px-12 py-2 sm:py-3 rounded-full hover:bg-primary-dark hover:scale-105 transform transition duration-300 text-sm sm:text-base shadow-lg shadow-primary/50 ">
               Download Resume
             </button>
             <button className="w-full sm:w-auto flex justify-center items-center gap-2 sm:gap-4 hover:scale-105 transform transition duration-300 text-sm sm:text-base">
