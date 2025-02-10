@@ -44,7 +44,7 @@ const Navbar = () => {
 
         {/* Hamburger Menu Button */}
         <button
-          className="md:hidden p-2 text-white focus:outline-none"
+          className="lg:hidden p-2 text-white focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? (
@@ -79,7 +79,7 @@ const Navbar = () => {
         </button>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex items-center gap-14">
+        <ul className="hidden lg:flex items-center gap-14">
           <Link
             to="/"
             className="relative hover:text-primary transition duration-300 cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
@@ -120,7 +120,7 @@ const Navbar = () => {
 
         {/* Fullscreen Overlay Menu */}
         {isOpen && (
-          <div className="fixed inset-0 bg-black bg-opacity-95 flex flex-col items-center justify-center z-50 md:hidden">
+          <div className="fixed inset-0 bg-black bg-opacity-95 flex flex-col items-center justify-center z-50 lg:hidden">
             {/* Close Button */}
             <button
               className="absolute top-6 right-6 p-2 text-white focus:outline-none"
