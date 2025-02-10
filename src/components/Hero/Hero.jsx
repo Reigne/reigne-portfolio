@@ -67,15 +67,18 @@ const Hero = () => {
 
           {/* Description */}
           <span className=" pt-2 sm:pt-4 md:pt-6">
-            A passionate web developer and designer based in the Philippines. I
-            love to create beautiful and functional websites that help
-            businesses grow. I am always eager to learn new technologies and
-            improve my skills.
+            I’m a freelance fullstack developer, video editor,
+            and graphic designer from the Philippines. I create websites and
+            designs that look great and work well. I’m always learning new
+            things to improve and help businesses grow.
           </span>
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row justify-start items-center gap-4 sm:gap-8 mt-4 sm:mt-6 md:mt-8 w-full">
-            <Link to="/contact" className="w-full sm:w-auto bg-primary text-black px-6 sm:px-8 md:px-12 py-2 sm:py-3 rounded-full hover:bg-primary-dark hover:scale-105 transform transition duration-300 text-sm sm:text-base shadow-lg shadow-primary/50 ">
+            <Link
+              to="/contact"
+              className="w-full sm:w-auto bg-primary text-black px-6 sm:px-8 md:px-12 py-2 sm:py-3 rounded-full hover:bg-primary-dark hover:scale-105 transform transition duration-300 text-sm sm:text-base shadow-lg shadow-primary/50 "
+            >
               Hire Me
             </Link>
             <button className="w-full sm:w-auto flex justify-center items-center gap-2 sm:gap-4 hover:scale-105 transform transition duration-300 text-sm sm:text-base">

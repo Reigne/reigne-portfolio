@@ -50,7 +50,7 @@ const AboutMe = () => {
                   <span className="transition-transform bg-gradient-to-br shadow-small from-lime-100 to-lime-500 rounded-full w-5 h-5 block group-data-[dragging=true]:scale-80" />
                 </div>
               )}
-              size="md"
+              size="lg"
             />
 
             <Slider
@@ -69,7 +69,7 @@ const AboutMe = () => {
                   <span className="transition-transform bg-gradient-to-br shadow-small from-lime-100 to-lime-500 rounded-full w-5 h-5 block group-data-[dragging=true]:scale-80" />
                 </div>
               )}
-              size="md"
+              size="lg"
             />
 
             <Slider
@@ -88,7 +88,7 @@ const AboutMe = () => {
                   <span className="transition-transform bg-gradient-to-br shadow-small from-lime-100 to-lime-500 rounded-full w-5 h-5 block group-data-[dragging=true]:scale-80" />
                 </div>
               )}
-              size="md"
+              size="lg"
             />
 
             <Slider
@@ -107,7 +107,7 @@ const AboutMe = () => {
                   <span className="transition-transform bg-gradient-to-br shadow-small from-lime-100 to-lime-500 rounded-full w-5 h-5 block group-data-[dragging=true]:scale-80" />
                 </div>
               )}
-              size="md"
+              size="lg"
             />
           </div>
 
