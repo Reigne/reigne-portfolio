@@ -5,10 +5,10 @@ const AboutMe = () => {
   return (
     <div className="font-poppins flex justify-center items-center bg-white px-2">
       <div
-        className="w-full max-w-screen-2xl overflow-hidden flex justify-center gap-16 py-24 px-0 md:px-8 items-center"
+        className="w-full max-w-screen-2xl overflow-hidden flex flex-col md:flex-row justify-center gap-8 md:gap-16 py-12 md:py-24 px-4 md:px-8 items-center"
         id="about"
       >
-        <div className="w-2/5">
+        <div className="w-full md:w-2/5">
           <img
             src="/images/reigne-circle.png"
             alt="About Me"
@@ -16,13 +16,13 @@ const AboutMe = () => {
           />
         </div>
 
-        <div className="space-y-8 w-3/5">
-          <div className="space-y-4">
-            <p className="text-base md:text-xl font-semibold">About Me</p>
-            <p className="text-2xl md:text-3xl lg:text-5xl font-bold">
+        <div className="flex flex-col gap-8 w-full md:w-3/5">
+          <div className="flex flex-col items-center md:items-start justify-start gap-4">
+            <p className="text-lg md:text-xl font-semibold">About Me</p>
+            <p className="text-2xl md:text-3xl lg:text-5xl font-bold text-center md:text-left">
               Who is <span className="text-primary">Reigne</span>?
             </p>
-            <p className="text-zinc-800 text-lg">
+            <p className="text-zinc-800 text-base md:text-lg text-center md:text-left">
               Hey there! I'm Reigne, a freelance fullstack developer, video
               editor, and graphic designer who loves combining creativity with
               technology. I’m all about building smooth web applications,
