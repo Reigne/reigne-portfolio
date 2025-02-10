@@ -3,11 +3,11 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <div
-      className="font-poppins flex justify-center items-center bg-white px-2"
-      id="about"
-    >
-      <div className="w-full max-w-screen-2xl overflow-hidden flex justify-center gap-16 py-24 px-0 md:px-8 items-center">
+    <div className="font-poppins flex justify-center items-center bg-white px-2">
+      <div
+        className="w-full max-w-screen-2xl overflow-hidden flex justify-center gap-16 py-24 px-0 md:px-8 items-center"
+        id="about"
+      >
         <div className="w-2/5">
           <img
             src="/images/reigne-circle.png"

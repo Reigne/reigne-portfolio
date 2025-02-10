@@ -25,7 +25,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="font-poppins flex justify-center items-center px-2">
+    <div className="font-poppins flex justify-center items-center px-2" id="projects">
       <div className="w-full max-w-screen-2xl min-h-[924px] overflow-hidden flex justify-center gap-8 py-24 px-0 md:px-8">
         <div className="flex flex-col w-full ">
           <div className="text-center space-y-2 md:space-y-4">

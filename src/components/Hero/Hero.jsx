@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div
       className="w-full flex justify-center bg-background text-white font-poppins overflow-hidden relative px-2"
-      id="about"
+      id="home"
     >
       
       <img
