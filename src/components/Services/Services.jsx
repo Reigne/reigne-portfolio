@@ -23,7 +23,7 @@ const Services = () => {
           <div className="flex flex-col lg:flex-row justify-center items-center gap-2 mt-8 md:mt-16 w-full">
             {/* Web Development Service */}
             <div
-              className="bg-background text-white p-8 rounded-3xl transition w-full lg:w-[490px] h-[588px] bg-cover"
+              className="bg-background text-white p-8 rounded-[3rem] transition w-full lg:w-[490px] h-[588px] bg-cover bg-blend-luminosity hover:bg-blend-normal"
               style={{
                 backgroundImage: "url('/images/services-container.png')",
               }}
@@ -57,7 +57,7 @@ const Services = () => {
 
             {/* Graphic Design Service */}
             <div
-              className="bg-background text-white p-8 rounded-3xl transition w-full lg:w-[540px] h-[638px] bg-cover"
+              className="bg-background text-white p-8 rounded-[3rem] transition w-full lg:w-[540px] h-[638px] bg-cover bg-blend-luminosity hover:bg-blend-normal"
               style={{
                 backgroundImage: "url('/images/services-container.png')",
               }}
@@ -82,7 +82,7 @@ const Services = () => {
 
             {/* Video Editor */}
             <div
-              className="bg-background text-white p-8 rounded-3xl transition w-full lg:w-[490px] h-[588px] bg-cover"
+              className="bg-background text-white p-8 rounded-[3rem] transition w-full lg:w-[490px] h-[588px] bg-cover bg-blend-luminosity hover:bg-blend-normal"
               style={{
                 backgroundImage: "url('/images/services-container.png')",
               }}

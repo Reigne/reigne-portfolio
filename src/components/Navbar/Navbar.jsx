@@ -58,16 +58,19 @@ const Navbar = () => {
             to="/"
             className="relative hover:text-primary transition duration-300 cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
           >
-            about
+            Home
           </Link>
           <li className="relative hover:text-primary transition duration-300 cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">
-            skills
+            About Me
           </li>
           <li className="relative hover:text-primary transition duration-300 cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">
-            projects
+            Services
           </li>
           <li className="relative hover:text-primary transition duration-300 cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">
-            testimonials
+            Projects
+          </li>
+          <li className="relative hover:text-primary transition duration-300 cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">
+            Testimonials
           </li>
           <Link to="/contact">
             <li className="bg-primary rounded-full cursor-pointer px-8 py-2 text-black hover:bg-primary-dark hover:scale-105 transition duration-300">
@@ -105,16 +108,19 @@ const Navbar = () => {
                 to="/"
                 className="relative hover:text-primary transition duration-300 cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
               >
-                about
+                Home
               </Link>
               <li className="relative hover:text-primary transition duration-300 cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">
-                skills
+                About Me
               </li>
               <li className="relative hover:text-primary transition duration-300 cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">
-                projects
+                Services
               </li>
               <li className="relative hover:text-primary transition duration-300 cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">
-                testimonials
+                Projects
+              </li>
+              <li className="relative hover:text-primary transition duration-300 cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">
+                Testimonials
               </li>
               <Link to="/contact">
                 <li className="bg-primary rounded-full cursor-pointer px-8 py-2 text-black hover:bg-primary-dark hover:scale-105 transition duration-300">
