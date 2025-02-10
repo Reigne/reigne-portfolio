@@ -10,24 +10,20 @@ const Footer = () => {
   return (
     <div
       className="bg-background font-poppins flex flex-col justify-center items-center px-4 bg-bottom text-white"
-    //   style={{ backgroundImage: "url('/images/old/background-1.png')" }}
+      //   style={{ backgroundImage: "url('/images/old/background-1.png')" }}
     >
       <div className="w-full max-w-screen-2xl px-4 md:px-8 overflow-hidden flex justify-between gap-8 py-20">
         <div className="flex flex-col gap-4 w-[30rem]">
           <h1 className="text-2xl font-bold flex items-center gap-3">
             <span>
-              <img
-                src="/images/logo.png"
-                alt="logo"
-                className="w-6 h-6"
-              />
+              <img src="/images/logo.png" alt="logo" className="w-6 h-6" />
             </span>
             reigne.
           </h1>
 
           <p className="text-zinc-400">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Crafting websites, videos, and designs with passion and creativity.
+            Let’s build something amazing together!
           </p>
         </div>
 
@@ -68,7 +64,9 @@ const Footer = () => {
           &copy; 2025 Reigne. All rights reserved.
         </p>
 
-        <p>Designed by <span className="font-bold">Reigne</span></p>
+        <p>
+          Designed by <span className="font-bold">Reigne</span>
+        </p>
       </div>
     </div>
   );
