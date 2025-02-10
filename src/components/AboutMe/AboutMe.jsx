@@ -16,22 +16,24 @@ const AboutMe = () => {
           />
         </div>
 
-        <div className="space-y-2 md:space-y-4 w-3/5">
-          <p className="text-base md:text-xl font-semibold">About Me</p>
-          <p className="text-2xl md:text-3xl lg:text-5xl font-bold">
-            Who is <span className="text-primary">Reigne</span>?
-          </p>
-          <p>
-            Hey there! I'm Reigne, a fullstack developer, video editor, and
-            graphic designer who loves combining creativity with technology. I’m
-            all about building smooth web applications, creating videos that
-            capture attention, and designing visuals that stand out. I’m
-            passionate about bringing ideas to life and always aim to make each
-            project fun, functional, and unique. Let’s create something awesome
-            together!
-          </p>
+        <div className="space-y-6 w-3/5">
+          <div className="space-y-4">
+            <p className="text-base md:text-xl font-semibold">About Me</p>
+            <p className="text-2xl md:text-3xl lg:text-5xl font-bold">
+              Who is <span className="text-primary">Reigne</span>?
+            </p>
+            <p className="text-zinc-800">
+              Hey there! I'm Reigne, a freelance fullstack developer, video
+              editor, and graphic designer who loves combining creativity with
+              technology. I’m all about building smooth web applications,
+              creating videos that capture attention, and designing visuals that
+              stand out. I’m passionate about bringing ideas to life and always
+              aim to make each project fun, functional, and unique. Let’s create
+              something awesome together!
+            </p>
+          </div>
 
-          <div className="flex flex-col gap-4 w-full">
+          <div className="flex flex-col gap-4 w-full mt-2">
             <Slider
               classNames={{
                 base: "w-full gap-3",
@@ -108,6 +110,10 @@ const AboutMe = () => {
               size="md"
             />
           </div>
+
+          <button className="w-full sm:w-auto bg-primary text-black px-6 sm:px-8 md:px-12 py-2 sm:py-3 rounded-full hover:bg-primary-dark hover:scale-105 transform transition duration-300 text-sm sm:text-base shadow-lg shadow-primary/50 mt-2">
+            Download Resume
+          </button>
         </div>
       </div>
     </div>

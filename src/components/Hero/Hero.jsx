@@ -1,6 +1,7 @@
 import React from "react";
 import { FaLink } from "react-icons/fa6";
 import { MouseParallax, ScrollParallax } from "react-just-parallax";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -8,7 +9,6 @@ const Hero = () => {
       className="w-full flex justify-center bg-background text-white font-poppins overflow-hidden relative px-2"
       id="home"
     >
-      
       <img
         src="/images/gradient.png"
         alt="Gradient"
@@ -75,9 +75,9 @@ const Hero = () => {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row justify-start items-center gap-4 sm:gap-8 mt-4 sm:mt-6 md:mt-8 w-full">
-            <button className="w-full sm:w-auto bg-primary text-black px-6 sm:px-8 md:px-12 py-2 sm:py-3 rounded-full hover:bg-primary-dark hover:scale-105 transform transition duration-300 text-sm sm:text-base shadow-lg shadow-primary/50 ">
-              Download Resume
-            </button>
+            <Link to="/contact" className="w-full sm:w-auto bg-primary text-black px-6 sm:px-8 md:px-12 py-2 sm:py-3 rounded-full hover:bg-primary-dark hover:scale-105 transform transition duration-300 text-sm sm:text-base shadow-lg shadow-primary/50 ">
+              Hire Me
+            </Link>
             <button className="w-full sm:w-auto flex justify-center items-center gap-2 sm:gap-4 hover:scale-105 transform transition duration-300 text-sm sm:text-base">
               <FaLink />
               linkedin.com/ph/elijareigne-monterona
