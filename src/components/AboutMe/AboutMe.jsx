@@ -16,13 +16,13 @@ const AboutMe = () => {
           />
         </div>
 
-        <div className="space-y-6 w-3/5">
+        <div className="space-y-8 w-3/5">
           <div className="space-y-4">
             <p className="text-base md:text-xl font-semibold">About Me</p>
             <p className="text-2xl md:text-3xl lg:text-5xl font-bold">
               Who is <span className="text-primary">Reigne</span>?
             </p>
-            <p className="text-zinc-800">
+            <p className="text-zinc-800 text-lg">
               Hey there! I'm Reigne, a freelance fullstack developer, video
               editor, and graphic designer who loves combining creativity with
               technology. I’m all about building smooth web applications,
