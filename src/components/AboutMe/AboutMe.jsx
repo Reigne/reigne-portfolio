@@ -60,8 +60,8 @@ const AboutMe = () => {
                 track: "border-s-lime-100",
                 filler: "bg-gradient-to-r from-lime-100 to-lime-500",
               }}
-              value={94}
-              label="Fullstack Development"
+              value={92}
+              label="Backend Development"
               renderThumb={(props) => (
                 <div
                   {...props}
@@ -70,26 +70,7 @@ const AboutMe = () => {
                   <span className="transition-transform bg-gradient-to-br shadow-small from-lime-100 to-lime-500 rounded-full w-5 h-5 block group-data-[dragging=true]:scale-80" />
                 </div>
               )}
-              size="lg"
-            />
-
-            <Slider
-              classNames={{
-                base: "w-full gap-3",
-                track: "border-s-lime-100",
-                filler: "bg-gradient-to-r from-lime-100 to-lime-500",
-              }}
-              value={90}
-              label="Website Design"
-              renderThumb={(props) => (
-                <div
-                  {...props}
-                  className="group p-1 top-1/2 bg-background border-small border-default-200 dark:border-default-400/50 shadow-medium rounded-full cursor-grab data-[dragging=true]:cursor-grabbing"
-                >
-                  <span className="transition-transform bg-gradient-to-br shadow-small from-lime-100 to-lime-500 rounded-full w-5 h-5 block group-data-[dragging=true]:scale-80" />
-                </div>
-              )}
-              size="lg"
+              size="md"
             />
 
             <Slider
@@ -99,6 +80,44 @@ const AboutMe = () => {
                 filler: "bg-gradient-to-r from-lime-100 to-lime-500",
               }}
               value={96}
+              label="Frontend Development"
+              renderThumb={(props) => (
+                <div
+                  {...props}
+                  className="group p-1 top-1/2 bg-background border-small border-default-200 dark:border-default-400/50 shadow-medium rounded-full cursor-grab data-[dragging=true]:cursor-grabbing"
+                >
+                  <span className="transition-transform bg-gradient-to-br shadow-small from-lime-100 to-lime-500 rounded-full w-5 h-5 block group-data-[dragging=true]:scale-80" />
+                </div>
+              )}
+              size="md"
+            />
+
+            <Slider
+              classNames={{
+                base: "w-full gap-3",
+                track: "border-s-lime-100",
+                filler: "bg-gradient-to-r from-lime-100 to-lime-500",
+              }}
+              value={94}
+              label="Website Design"
+              renderThumb={(props) => (
+                <div
+                  {...props}
+                  className="group p-1 top-1/2 bg-background border-small border-default-200 dark:border-default-400/50 shadow-medium rounded-full cursor-grab data-[dragging=true]:cursor-grabbing"
+                >
+                  <span className="transition-transform bg-gradient-to-br shadow-small from-lime-100 to-lime-500 rounded-full w-5 h-5 block group-data-[dragging=true]:scale-80" />
+                </div>
+              )}
+              size="md"
+            />
+
+            <Slider
+              classNames={{
+                base: "w-full gap-3",
+                track: "border-s-lime-100",
+                filler: "bg-gradient-to-r from-lime-100 to-lime-500",
+              }}
+              value={98}
               label="Graphic Design"
               renderThumb={(props) => (
                 <div
@@ -108,7 +127,7 @@ const AboutMe = () => {
                   <span className="transition-transform bg-gradient-to-br shadow-small from-lime-100 to-lime-500 rounded-full w-5 h-5 block group-data-[dragging=true]:scale-80" />
                 </div>
               )}
-              size="lg"
+              size="md"
             />
 
             <Slider
@@ -127,7 +146,7 @@ const AboutMe = () => {
                   <span className="transition-transform bg-gradient-to-br shadow-small from-lime-100 to-lime-500 rounded-full w-5 h-5 block group-data-[dragging=true]:scale-80" />
                 </div>
               )}
-              size="lg"
+              size="md"
             />
           </div>
 
