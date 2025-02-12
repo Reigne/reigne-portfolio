@@ -7,13 +7,13 @@ const ContactMe = () => {
       className="font-poppins flex justify-center items-center px-4 bg-background bg-center"
       style={{ backgroundImage: "url('/images/gradient.png')" }}
     >
-      <div className="w-full min-h-[924px] max-w-screen-2xl px-4 md:px-8 overflow-hidden flex items-center justify-center gap-8 py-24 text-white">
+      <div className="w-full min-h-[924px] max-w-screen-2xl  overflow-hidden flex items-center justify-center gap-8 py-24 text-white">
         <div className="flex flex-col items-center gap-4 w-full" id="contact">
           <p className="text-5xl font-bold text-center">
             Get in <span className="text-primary">touch</span>
           </p>
           <p className="text-zinc-300 text-center">
-            Fill out the form below and we’ll get back to you ASAP.
+            I’d love to hear from you! Fill out the form, and I’ll be in touch.
           </p>
 
           <div className="bg-white/5 rounded-2xl w-full max-w-[36rem] flex flex-col items-center gap-4 p-4 text-black">
