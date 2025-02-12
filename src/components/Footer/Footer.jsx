@@ -51,7 +51,7 @@ const Footer = () => {
             elijareigne@gmail.com
           </p>
           <p className="text-zinc-400 text-sm md:text-base">
-            (63+) 921 9201 772
+            (+63) 921 9201 772
           </p>
           <p className="text-zinc-400 text-sm md:text-base">
             Santa Rosa City, Dita, Laguna, Philippines
