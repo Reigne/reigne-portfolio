@@ -62,18 +62,17 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col justify-center items-start sw-full md:w-1/2 relative z-40">
-          <div className="flex flex-col gap-4 w-full">
-            {/* Heading */}
-            <p className="text-4xl sm:text-2xl md:text-xl lg:text-4xl pt-8">
+          <div className="flex flex-col w-full gap-2">
+            <p className="text-4xl sm:text-2xl md:text-xl lg:text-4xl">
               Hello, there
             </p>
 
-            <p className="text-5xl sm:text-6xl md:text-3xl lg:text-[60px] xl:text-[80px] font-bold">
+            <p className="text-5xl sm:text-6xl md:text-3xl lg:text-6xl xl:text-7xl font-bold">
               I am <span className="text-primary">Reigne</span>
             </p>
 
             {/* Description */}
-            <span className="text-sm">
+            <span className="text-sm md:text-base">
               I’m a freelance fullstack developer, video editor, and graphic
               designer from the Philippines. I create websites and designs that
               look great and work well. I’m always learning new things to
