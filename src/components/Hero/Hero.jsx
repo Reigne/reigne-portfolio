@@ -43,7 +43,7 @@ const Hero = () => {
             </ScrollParallax>
 
             <img
-              className="absolute z-20 bottom-0 left-[50px] md:left-[40px] lg:left-[80px] mix-blend-hard-light w-[20%] h-auto"
+              className="absolute z-20 bottom-0 left-[50px] md:left-[40px] lg:left-[60px] xl:left-[80px] mix-blend-hard-light w-[20%] h-auto"
               src="/images/photoshop-toolbar.png"
               alt="Container"
               draggable="false"
