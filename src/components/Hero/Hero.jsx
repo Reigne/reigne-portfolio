@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <div
-      className="w-full flex justify-center bg-background text-white font-poppins overflow-hidden relative px-4 pt-14"
+      className="w-full flex justify-center bg-background text-white font-poppins overflow-hidden relative px-4 pt-24 md:pt-14"
       id="home"
     >
       <img
