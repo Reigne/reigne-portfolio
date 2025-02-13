@@ -150,9 +150,13 @@ const AboutMe = () => {
             />
           </div>
 
-          <button className="w-full md:w-fit bg-primary text-black px-4 sm:px-6 md:px-8 py-2 md:py-3 rounded-full hover:bg-primary-dark hover:scale-105 transform transition duration-300 text-md sm:text-md md:text-base shadow-md md:shadow-lg shadow-primary/30 md:shadow-primary/50 mt-2">
+          <a
+            href="/reigne-resume.pdf"
+            download
+            className="w-full md:w-fit bg-primary text-black px-4 sm:px-6 md:px-8 py-2 md:py-3 rounded-full hover:bg-primary-dark hover:scale-105 transform transition duration-300 text-md sm:text-md md:text-base shadow-md md:shadow-lg shadow-primary/30 md:shadow-primary/50 mt-2"
+          >
             Download Resume
-          </button>
+          </a>
         </div>
       </div>
     </div>

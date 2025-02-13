@@ -88,10 +88,15 @@ const Hero = () => {
             >
               Hire Me
             </Link>
-            <button className="w-full sm:w-auto flex justify-center items-center gap-2 sm:gap-4 hover:scale-105 transform transition duration-300 text-base sm:text-base md:text-sm lg:text-base">
+            <a
+              href="https://www.linkedin.com/in/elijareigne/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto flex justify-center items-center gap-2 sm:gap-4 hover:scale-105 transform transition duration-300 text-base sm:text-base md:text-sm lg:text-base"
+            >
               <FaLink />
-              linkedin.com/ph/elijareigne-monterona
-            </button>
+              linkedin.com/in/elijareigne
+            </a>
           </div>
         </div>
       </div>
