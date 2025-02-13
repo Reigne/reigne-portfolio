@@ -1,11 +1,13 @@
 import { footer } from "framer-motion/client";
 import React from "react";
-import { FaFacebook, FaTwitter } from "react-icons/fa6";
-import { FaFacebookF } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
 import { AiFillInstagram } from "react-icons/ai";
+import { FaTwitter } from "react-icons/fa6";
+import { FaFacebookF } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { IoLogoGithub } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import { IoLogoLinkedin } from "react-icons/io";
 
 const Footer = () => {
   return (
@@ -65,7 +67,12 @@ const Footer = () => {
           </p>
 
           <div className="flex gap-4 justify-start">
-            <a className="cursor-pointer">
+            <a
+              href="https://www.facebook.com/reigne.monterona18/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer"
+            >
               <FaFacebookF className="text-xl text-white" />
             </a>
             <a className="cursor-pointer">
@@ -74,9 +81,21 @@ const Footer = () => {
             <a className="cursor-pointer">
               <FaTwitter className="text-xl text-white" />
             </a>
-
-            <a className="cursor-pointer">
+            <a
+              href="https://github.com/Reigne"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer"
+            >
               <IoLogoGithub className="text-xl text-white" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/elijareigne/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer"
+            >
+              <IoLogoLinkedin className="text-xl text-white" />
             </a>
           </div>
         </div>

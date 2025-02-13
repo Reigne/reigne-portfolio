@@ -1,5 +1,10 @@
 import { Slider } from "@heroui/react";
 import React from "react";
+import { FaTwitter } from "react-icons/fa6";
+import { FaFacebookF } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
+import { IoLogoGithub } from "react-icons/io5";
+import { IoLogoLinkedin } from "react-icons/io";
 
 const AboutMe = () => {
   return (
@@ -19,7 +24,7 @@ const AboutMe = () => {
         <div className="flex flex-col gap-8 w-full md:w-3/5">
           <div className="flex flex-col items-center md:items-start justify-start gap-3 md:gap-4">
             <p className="text-base md:text-lg font-semibold">About Me</p>
-            <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center md:text-left leading-tight">
+            <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center md:text-left leading-tight">
               Who is <span className="text-primary">Reigne</span>?
             </p>
             <p className="text-zinc-800 text-sm md:text-base lg:text-lg text-center md:text-left leading-relaxed">
@@ -150,13 +155,48 @@ const AboutMe = () => {
             />
           </div>
 
-          <a
-            href="/reigne-resume.pdf"
-            download
-            className="w-full md:w-fit bg-primary text-black px-4 sm:px-6 md:px-8 py-2 md:py-3 rounded-full hover:bg-primary-dark hover:scale-105 transform transition duration-300 text-md sm:text-md md:text-base shadow-md md:shadow-lg shadow-primary/30 md:shadow-primary/50 mt-2"
-          >
-            Download Resume
-          </a>
+          <div className="flex justify-start items-center gap-8">
+            <a
+              href="/reigne-resume.pdf"
+              download
+              className="w-full md:w-fit bg-primary text-black px-4 sm:px-6 md:px-8 py-2 md:py-3 rounded-full hover:bg-primary-dark hover:scale-105 transform transition duration-300 text-md sm:text-md md:text-base shadow-md md:shadow-lg shadow-primary/30 md:shadow-primary/50 mt-2"
+            >
+              Download Resume
+            </a>
+
+            <div className="flex gap-8 justify-start items-center">
+              <a
+                href="https://www.facebook.com/reigne.monterona18/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer"
+              >
+                <FaFacebookF className="text-2xl text-background hover:text-primary" />
+              </a>
+              <a className="cursor-pointer">
+                <RiInstagramFill className="text-2xl text-background hover:text-primary" />
+              </a>
+              <a className="cursor-pointer">
+                <FaTwitter className="text-2xl text-background hover:text-primary" />
+              </a>
+              <a
+                href="https://github.com/Reigne"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer"
+              >
+                <IoLogoGithub className="text-2xl text-background hover:text-primary" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/elijareigne/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer"
+              >
+                <IoLogoLinkedin className="text-2xl text-background hover:text-primary" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
