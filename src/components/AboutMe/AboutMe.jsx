@@ -1,5 +1,4 @@
 import { Slider } from "@heroui/react";
-import React from "react";
 import { FaTwitter } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
@@ -28,7 +27,7 @@ const AboutMe = () => {
               Who is <span className="text-primary">Reigne</span>?
             </p>
             <p className="text-zinc-800 text-sm md:text-base lg:text-lg text-center md:text-left leading-relaxed">
-              Hey there! I'm Reigne, a freelance fullstack developer, video
+              Hey there! I’m Reigne, a freelance fullstack developer, video
               editor, and graphic designer who loves combining creativity with
               technology. I’m all about building smooth web applications,
               creating videos that capture attention, and designing visuals that
@@ -155,7 +154,7 @@ const AboutMe = () => {
             />
           </div>
 
-          <div className="flex justify-start items-center gap-8">
+          <div className="flex flex-col sm:flex-row justify-start items-start sm:items-center gap-8">
             <a
               href="/reigne-resume.pdf"
               download
@@ -171,13 +170,13 @@ const AboutMe = () => {
                 rel="noopener noreferrer"
                 className="cursor-pointer"
               >
-                <FaFacebookF className="text-2xl text-background hover:text-primary" />
+                <FaFacebookF className="text-xl sm:text-2xl text-background hover:text-primary" />
               </a>
               <a className="cursor-pointer">
-                <RiInstagramFill className="text-2xl text-background hover:text-primary" />
+                <RiInstagramFill className="text-xl sm:text-2xl text-background hover:text-primary" />
               </a>
               <a className="cursor-pointer">
-                <FaTwitter className="text-2xl text-background hover:text-primary" />
+                <FaTwitter className="text-xl sm:text-2xl text-background hover:text-primary" />
               </a>
               <a
                 href="https://github.com/Reigne"
@@ -185,7 +184,7 @@ const AboutMe = () => {
                 rel="noopener noreferrer"
                 className="cursor-pointer"
               >
-                <IoLogoGithub className="text-2xl text-background hover:text-primary" />
+                <IoLogoGithub className="text-xl sm:text-2xl text-background hover:text-primary" />
               </a>
               <a
                 href="https://www.linkedin.com/in/elijareigne/"
