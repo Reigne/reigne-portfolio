@@ -12,12 +12,7 @@ const Projects = () => {
     { id: "videos", label: "Video Editing" },
   ];
 
-  const categories = [
-    "All",
-    "Thumbnails",
-    "Chandra",
-    "Kind Ocean",
-  ];
+  const categories = ["All", "Thumbnails", "Chandra", "Kind Ocean"];
 
   const handleTabChange = (tabId) => {
     setActiveTab(tabId);
@@ -25,7 +20,10 @@ const Projects = () => {
   };
 
   return (
-    <div className="font-poppins flex justify-center items-center px-2" id="projects">
+    <div
+      className="font-poppins flex justify-center items-center px-2"
+      id="projects"
+    >
       <div className="w-full max-w-screen-2xl min-h-[924px] overflow-hidden flex justify-center gap-8 py-24 px-0 md:px-8">
         <div className="flex flex-col w-full ">
           <div className="text-center space-y-2 md:space-y-4">
@@ -78,9 +76,18 @@ const Projects = () => {
               {PROJECTS.slice()
                 .reverse()
                 .map((project) => (
-                  <div
+                  <a
                     key={project.id}
                     className="group relative w-full h-[640px] bg-white rounded-lg overflow-hidden border border-background/30 cursor-pointer transition-all"
+                    href={
+                      project?.websiteLink
+                        ? project?.websiteLink
+                        : project?.repoLink
+                        ? project?.repoLink
+                        : null
+                    }
+                     target="_blank"
+  rel="noopener noreferrer"
                   >
                     <img
                       src={project.imageUrl}
@@ -97,7 +104,7 @@ const Projects = () => {
                         {project.name}
                       </span>
                     </div>
-                  </div>
+                  </a>
                 ))}
             </div>
           )}
@@ -106,7 +113,8 @@ const Projects = () => {
             <div className="columns-1 sm:columns-2 lg:columns-3 mt-8">
               {GRAPHICSDESIGNS.filter(
                 (category) =>
-                  activeCategory === "All" || category.category === activeCategory
+                  activeCategory === "All" ||
+                  category.category === activeCategory
               )
                 .flatMap((category) => category.items)
                 .map((project) => (

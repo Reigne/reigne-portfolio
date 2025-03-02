@@ -171,6 +171,7 @@ export const PROJECTS = [
     id: 1,
     name: "PC Master",
     imageUrl: pcMaster,
+    websiteLink: "https://pc-master.vercel.app/",
   },
   {
     id: 2,
@@ -186,11 +187,13 @@ export const PROJECTS = [
     id: 4,
     name: "Teampoor Mobile",
     imageUrl: teampoorMobile,
+    repoLink: "https://github.com/Reigne/teampoor-user-frontend"
   },
   {
     id: 5,
     name: "Teampoor Website",
     imageUrl: teampoorWebsite,
+    websiteLink: "https://teampoor-motorcycle-parts-and-services.vercel.app/",
   },
   {
     id: 6,
@@ -201,16 +204,19 @@ export const PROJECTS = [
     id: 7,
     name: "Capstone Solutions Portfolio",
     imageUrl: capstoneSolutionPortfolio,
+    websiteLink: "https://capstonesolutions-portfolio.vercel.app/",
   },
   {
     id: 8,
     name: "Tapinac System",
     imageUrl: tapinacSystem,
+    websiteLink: "https://www.361079tapinacshs.com/",
   },
   {
     id: 9,
     name: "Gia Portfolio",
     imageUrl: giaPortfolio,
+    websiteLink: "https://gia-portfolio-six.vercel.app/",
   },
 ];
 
