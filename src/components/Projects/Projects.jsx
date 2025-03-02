@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { PROJECTS, GRAPHICSDESIGNS, VIDEOEDITING } from "../../constants";
+import { PROJECTS, GRAPHICSDESIGNS } from "../../constants";
 import "./Projects.css";
 
 const Projects = () => {
   const [activeTab, setActiveTab] = useState("websites");
   const [activeCategory, setActiveCategory] = useState("All");
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+  const [cursorVisible, setCursorVisible] = useState(false);
 
   const tabs = [
     { id: "websites", label: "Website and Web Apps" },
@@ -18,6 +20,32 @@ const Projects = () => {
     setActiveTab(tabId);
     setActiveCategory("All"); // Reset category when switching tabs
   };
+
+  const handleMouseMove = (e) => {
+    setCursorPosition({ x: e.clientX, y: e.clientY });
+  };
+
+  const handleMouseEnter = (project) => {
+    if (project.websiteLink || project.repoLink) {
+      setCursorVisible(true);
+    }
+  };
+
+  const handleMouseLeave = () => {
+    setCursorVisible(false);
+  };
+
+  useEffect(() => {
+    if (cursorVisible) {
+      window.addEventListener("mousemove", handleMouseMove);
+    } else {
+      window.removeEventListener("mousemove", handleMouseMove);
+    }
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, [cursorVisible]);
 
   return (
     <div
@@ -86,8 +114,10 @@ const Projects = () => {
                         ? project?.repoLink
                         : null
                     }
-                     target="_blank"
-  rel="noopener noreferrer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onMouseEnter={() => handleMouseEnter(project)}
+                    onMouseLeave={handleMouseLeave}
                   >
                     <img
                       src={project.imageUrl}
@@ -130,6 +160,21 @@ const Projects = () => {
           )}
         </div>
       </div>
+
+      {cursorVisible && (
+        <div
+          className="fixed pointer-events-none z-50"
+          style={{
+            top: cursorPosition.y,
+            left: cursorPosition.x,
+            transform: "translate(10px, 10px)", // Adjust the position to be at the right bottom of the cursor
+          }}
+        >
+          <div className="bg-primary text-white px-2 py-1 rounded">
+            View Project
+          </div>
+        </div>
+      )}
     </div>
   );
 };
