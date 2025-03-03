@@ -170,8 +170,8 @@ const Projects = () => {
             transform: "translate(10px, 10px)", // Adjust the position to be at the right bottom of the cursor
           }}
         >
-          <div className="bg-primary text-white px-2 py-1 rounded">
-            View Project
+          <div className="bg-black text-white px-2 py-1 rounded shadow-md shadow-primary">
+            View Project 🔥
           </div>
         </div>
       )}
