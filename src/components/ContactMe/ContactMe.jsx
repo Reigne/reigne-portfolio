@@ -6,9 +6,9 @@ import emailjs from "emailjs-com";
 const ContactMe = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
+    user_name: "",
+    user_email: "",
+    user_message: "",
   });
   const [errors, setErrors] = useState({});
 
@@ -22,13 +22,13 @@ const ContactMe = () => {
 
   const validate = () => {
     const newErrors = {};
-    if (!formData.name) newErrors.name = "Name is required";
-    if (!formData.email) {
-      newErrors.email = "Email is required";
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = "Email is invalid";
+    if (!formData.user_name) newErrors.user_name = "Name is required";
+    if (!formData.user_email) {
+      newErrors.user_email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(formData.user_email)) {
+      newErrors.user_email = "Email is invalid";
     }
-    if (!formData.message) newErrors.message = "Message is required";
+    if (!formData.user_message) newErrors.user_message = "Message is required";
     return newErrors;
   };
 
@@ -45,7 +45,7 @@ const ContactMe = () => {
     emailjs
       .sendForm(
         "service_9hthklk",
-        "template_jz44fpj",
+        "template_d5h126d",
         e.target,
         "MLwtI9VnLQZGM9OPW"
       )
@@ -54,9 +54,9 @@ const ContactMe = () => {
           console.log("SUCCESS!");
           setIsLoading(false);
           setFormData({
-            name: "",
-            email: "",
-            message: "",
+            user_name: "",
+            user_email: "",
+            user_message: "",
           });
           e.target.reset();
 
@@ -98,13 +98,13 @@ const ContactMe = () => {
                 <Input
                   placeholder="Name"
                   size="lg"
-                  value={formData.name}
+                  value={formData.user_name}
                   onChange={handleChange}
-                  name="name"
-                  error={errors.name}
+                  name="user_name"
+                  error={errors.user_name}
                 />
-                {errors.name && (
-                  <p className="text-red-500 pt-1 text-xs">{errors.name}</p>
+                {errors.user_name && (
+                  <p className="text-red-500 pt-1 text-xs">{errors.user_name}</p>
                 )}
               </div>
 
@@ -112,13 +112,13 @@ const ContactMe = () => {
                 <Input
                   placeholder="Email"
                   size="lg"
-                  value={formData.email}
+                  value={formData.user_email}
                   onChange={handleChange}
-                  name="email"
-                  error={errors.email}
+                  name="user_email"
+                  error={errors.user_email}
                 />
-                {errors.email && (
-                  <p className="text-red-500 pt-1 text-xs">{errors.email}</p>
+                {errors.user_email && (
+                  <p className="text-red-500 pt-1 text-xs">{errors.user_email}</p>
                 )}
               </div>
             </div>
@@ -131,13 +131,13 @@ const ContactMe = () => {
                 minRows={8}
                 maxRows={12}
                 size="lg"
-                value={formData.message}
+                value={formData.user_message}
                 onChange={handleChange}
-                name="message"
-                error={errors.message}
+                name="user_message"
+                error={errors.user_message}
               />
-              {errors.message && (
-                <p className="text-red-500 pt-1 text-sm">{errors.message}</p>
+              {errors.user_message && (
+                <p className="text-red-500 pt-1 text-sm">{errors.user_message}</p>
               )}
             </div>
 
