@@ -2,6 +2,8 @@ import React from "react";
 import { FaLink } from "react-icons/fa6";
 import { MouseParallax, ScrollParallax } from "react-just-parallax";
 import { Link } from "react-router-dom";
+import Aurora from "../Backgrounds/Aurora";
+import RotatingText from "../TextAnimations/RotatingText";
 
 const Hero = () => {
   return (
@@ -9,6 +11,11 @@ const Hero = () => {
       className="w-full flex justify-center bg-background text-white font-poppins overflow-hidden relative px-4 pt-24 md:pt-14"
       id="home"
     >
+      {/* Aurora Background */}
+      {/* <div className="absolute inset-0 z-0 w-full h-full">
+        <Aurora />
+      </div> */}
+
       <img
         src="/images/bottom-shadow.png"
         alt="Bottom Blur"
@@ -64,12 +71,24 @@ const Hero = () => {
         <div className="flex flex-col justify-center items-start sw-full md:w-1/2 relative z-40">
           <div className="flex flex-col w-full gap-2">
             <p className="text-4xl sm:text-2xl md:text-xl lg:text-4xl">
-              Hello, there
+              Hi, I am a
             </p>
 
-            <p className="text-5xl sm:text-6xl md:text-3xl lg:text-6xl xl:text-7xl font-bold">
+            {/* Graphic Designer /  Fullstack Developer / Video Editor*/}
+            <RotatingText
+              texts={[
+                "Graphic Designer",
+                "Fullstack Developer", 
+                "Video Editor"
+              ]}
+              mainClassName="text-5xl sm:text-6xl md:text-3xl lg:text-6xl xl:text-7xl font-bold text-primary whitespace-nowrap"
+              rotationInterval={3000}
+              staggerDuration={0.05}
+            />
+
+            {/* <p className="text-5xl sm:text-6xl md:text-3xl lg:text-6xl xl:text-7xl font-bold">
               I am <span className="text-primary">Reigne</span>
-            </p>
+            </p> */}
 
             {/* Description */}
             <span className="text-sm md:text-base">
