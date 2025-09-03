@@ -21,7 +21,7 @@ import tailwindcss from "./skills/tailwindcss.png";
 
 // projects images
 import capstoneSolutionPortfolio from "./projects/capstone-solutions-portfolio.jpeg";
-import giaPortfolio from "./projects/gia-portfolio.jpeg";
+import giaPortfolio from "./projects/gia-portfolio.png";
 import hrPrimoAts from "./projects/hr-primo-ats.png";
 import meetworldHeroPage from "./projects/meetworld-heropage.jpeg";
 import pcMaster from "./projects/pc-master.jpeg";
@@ -30,6 +30,7 @@ import tapinacSystem from "./projects/tapinac-system.png";
 import teampoorMobile from "./projects/teampoor-mobile.png";
 import teampoorWebsite from "./projects/teampoor-website.png";
 import teampoorWebsite2 from "./projects/teampoor-website-2.png";
+import williamdarts from "./projects/william-darts.png";
 
 // thumbnail images
 import thumbnail1 from "./graphicdesigns/thumbnails/thumbnail (1).png";
@@ -101,6 +102,7 @@ export {
   teampoorMobile,
   teampoorWebsite,
   teampoorWebsite2,
+  williamdarts,
   thumbnail1,
   thumbnail2,
   thumbnail3,

@@ -28,6 +28,7 @@ import {
   teampoorMobile,
   teampoorWebsite,
   teampoorWebsite2,
+  williamdarts,
   thumbnail1,
   thumbnail2,
   thumbnail3,
@@ -217,6 +218,12 @@ export const PROJECTS = [
     name: "Gia Portfolio",
     imageUrl: giaPortfolio,
     websiteLink: "https://gia-portfolio-six.vercel.app/",
+  },
+  {
+    id: 10,
+    name: "William D'arts",
+    imageUrl: williamdarts,
+    websiteLink: "https://williartz.vercel.app/",
   },
 ];
 
